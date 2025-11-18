@@ -35,7 +35,7 @@ export const userApi = baseApi.injectEndpoints({
     }),
     getAdminStats: builder.query({
       query: () => ({
-        url: "/stats/user",
+        url: "/stats/order",
         method: "GET",
       }),
       providesTags: ["ADMIN_STATS"],

@@ -12,10 +12,9 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 const Testimonial = () => {
   const [more, setMore] = useState(false);
-  const { data, isLoading } = useGetAllReviewsQuery(undefined);
+  const { data } = useGetAllReviewsQuery(undefined);
 
   const testimonials = data?.data;
-  console.log("reviews is", testimonials);
 
   return (
     <section className="w-full mx-auto lg:mt-[80px] md:[60px] mt-[40px]   ">

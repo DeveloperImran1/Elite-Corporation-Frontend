@@ -66,6 +66,7 @@ export function RegisterForm({
       }
     } catch (error) {
       toast.error("Register error", { id: toastId });
+      console.log(error);
     }
   }
 

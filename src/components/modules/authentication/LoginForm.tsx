@@ -37,8 +37,8 @@ export function LoginForm({
   const form = useForm<z.infer<typeof loginSchema>>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
-      email: "admin@gmail.com",
-      password: "aaaaaaaa",
+      email: "",
+      password: "",
     },
   });
   async function onSubmit(data: z.infer<typeof loginSchema>) {
@@ -60,6 +60,7 @@ export function LoginForm({
       }
     } catch (error: any) {
       toast.error("Login error", { id: toastId });
+      console.log(error);
     }
   }
 

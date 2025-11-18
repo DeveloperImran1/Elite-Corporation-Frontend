@@ -19,7 +19,6 @@ import { toast } from "sonner";
 
 export function AddReview() {
   const [image, setImage] = useState<File | null>(null);
-  const [open, setOpen] = useState(false);
 
   const [createReview] = useCreateReviewMutation();
 
@@ -47,7 +46,6 @@ export function AddReview() {
       const res = await createReview({ formData });
       console.log(res);
       toast.success("Review added succefully ", { id: toastId });
-      setOpen(false);
     } catch (error) {
       toast.error("Profile upload failed", { id: toastId });
 
