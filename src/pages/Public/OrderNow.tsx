@@ -41,10 +41,18 @@ const OrderCreateZodSchema = z.object({
   totalAmount: z.number().min(0, "Total amount cannot be negative"),
 });
 
+type TProduct = {
+  id: string;
+  name: string;
+  quantity: number;
+  price: number;
+  subtotal: number;
+};
+
 // ----------------- Component -----------------
 const OrderNow = () => {
   const [quantity, setQuantity] = useState(1);
-  const [products, setProducts] = useState([
+  const [products, setProducts] = useState<TProduct[]>([
     {
       id: "332423214232",
       name: "পাইলস কেয়ার ড্রিংকিং পাউডার",
@@ -99,13 +107,13 @@ const OrderNow = () => {
     }
 
     // Set products to form data
-    data.products = products;
+    data.products = products as TProduct[];
 
     // Update form values for validation
     form.setValue("products", products);
     form.setValue(
       "subtotal",
-      products.reduce((sum, p) => sum + p.subtotal, 0)
+      products.reduce((sum: number, p: TProduct) => sum + p.subtotal, 0)
     );
 
     const toastId = toast.loading("Creating order...");
@@ -235,7 +243,7 @@ const OrderNow = () => {
               <div className="text-start   ">
                 <label className="text-sm font-medium">পরিমাণ *</label>
                 <Input
-                  onChange={(e) => setQuantity(e.target.value)}
+                  onChange={(e) => setQuantity(Number(e.target.value))}
                   placeholder="1"
                   type="number"
                   min="1"
