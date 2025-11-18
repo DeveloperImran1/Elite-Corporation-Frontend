@@ -3,7 +3,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore: Missing type declarations for side-effect CSS import
 import "swiper/css";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore: Missing type declarations for side-effect CSS import
 import "swiper/css/pagination";
 
 import { useGetAllReviewsQuery } from "@/redux/features/review/review.api";

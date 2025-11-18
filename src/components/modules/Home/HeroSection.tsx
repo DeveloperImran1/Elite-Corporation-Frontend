@@ -1,8 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore: Missing type declarations for side-effect CSS import
 import "swiper/css";
-import "swiper/css/navigation";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore: Missing type declarations for side-effect CSS import
 import "swiper/css/pagination";
 
 // import required modules
