@@ -13,10 +13,9 @@ import { Autoplay } from "swiper/modules";
 
 export default function HeroSection() {
   const banners = [
-    "https://res.cloudinary.com/dqdircc96/image/upload/v1747059755/cwpp7ufqldm9dg7c9pol.png",
-    "https://res.cloudinary.com/dqdircc96/image/upload/v1747059810/w81rrijhdwmwlvyebyuk.png",
-    "https://res.cloudinary.com/dqdircc96/image/upload/v1747059851/jpsz51jpmujmvkoc88fy.jpg",
-    "https://res.cloudinary.com/dqdircc96/image/upload/v1747059892/a0subrtpnsognibwy1yv.jpg",
+    "https://i.postimg.cc/hPMNs5kx/2.png",
+    "https://i.postimg.cc/639s6xnq/workers.png",
+    "https://i.postimg.cc/5NpDgRhr/3.png",
   ];
   return (
     <section className="">

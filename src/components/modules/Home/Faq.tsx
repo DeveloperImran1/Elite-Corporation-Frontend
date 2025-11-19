@@ -80,11 +80,13 @@ const items = [
 export default function Faq() {
   return (
     <>
-      <section className="py-16 max-w-full  mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <section className="max-w-full  mx-auto  pt-16">
+        <h2 className="text-2xl md:text-3xl text-left font-bold mb-8">
+          Frequently Asked Question
+        </h2>
+      </section>
+      <section className=" grid md:grid-cols-2 gap-10 justify-center">
         <div className="space-y-4">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8">
-            Frequently Asked Question
-          </h2>
           <Accordion
             type="single"
             collapsible
@@ -119,12 +121,12 @@ export default function Faq() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative w-full flex justify-center "
+          className="relative w-full flex h-[600px] "
         >
           <img
-            src="https://pathao.com/wp-content/uploads/2019/02/parcel-new.png"
+            src="https://i.postimg.cc/Y0kjdYfY/team3.webp"
             alt="App Mockup"
-            className="w-full max-w-sm drop-shadow-xl rounded-2xl"
+            className="w-full drop-shadow-xl rounded-2xl h-auto object-cover"
           />
         </motion.div>
       </section>

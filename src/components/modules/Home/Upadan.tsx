@@ -2,48 +2,41 @@ import { motion } from "framer-motion";
 
 const elements = [
   {
-    image:
-      "https://i.ibb.co.com/dJjksrXG/82195563-1326076587585019-2103686754086158336-n.jpg",
+    image: "https://i.postimg.cc/SKkmCDg1/images.jpg",
     name: "লজ্জাবতী",
   },
   {
     image:
-      "https://i.ibb.co.com/dJjksrXG/82195563-1326076587585019-2103686754086158336-n.jpg",
+      "https://i.postimg.cc/wBn3CSHh/143f43f468de053d3213047c73d7344f5345c9c97b1ba227.jpg",
     name: "জ্যৈষ্ঠ মধু",
   },
   {
-    image:
-      "https://i.ibb.co.com/dJjksrXG/82195563-1326076587585019-2103686754086158336-n.jpg",
+    image: "https://i.postimg.cc/85W8YvXg/images-(2).jpg",
     name: "জার্মানী লতা",
   },
   {
-    image:
-      "https://i.ibb.co.com/dJjksrXG/82195563-1326076587585019-2103686754086158336-n.jpg",
+    image: "https://i.postimg.cc/zBY2VcpX/haritaki.jpg",
     name: "হার্তুকী",
   },
   {
     image:
-      "https://i.ibb.co.com/dJjksrXG/82195563-1326076587585019-2103686754086158336-n.jpg",
+      "https://i.postimg.cc/hGW1r7mQ/1724912286-new-project-2024-08-29t114734-832.jpg",
     name: "আমলকী",
   },
   {
-    image:
-      "https://i.ibb.co.com/dJjksrXG/82195563-1326076587585019-2103686754086158336-n.jpg",
+    image: "https://i.postimg.cc/0QNMd8tR/senna-leaf-powder-500x500.webp",
     name: "সোনাপাতা",
   },
   {
-    image:
-      "https://i.ibb.co.com/dJjksrXG/82195563-1326076587585019-2103686754086158336-n.jpg",
+    image: "https://i.postimg.cc/LhF87R3Q/images-(3).jpg",
     name: "মাশরুম",
   },
   {
-    image:
-      "https://i.ibb.co.com/dJjksrXG/82195563-1326076587585019-2103686754086158336-n.jpg",
+    image: "https://i.postimg.cc/3r4FDTdR/images-(5).jpg",
     name: "কালোজিরা",
   },
   {
-    image:
-      "https://i.ibb.co.com/dJjksrXG/82195563-1326076587585019-2103686754086158336-n.jpg",
+    image: "https://i.postimg.cc/Y2WQCzsH/images-(6).jpg",
     name: "মিঠাজিরা",
   },
 ];
@@ -70,7 +63,11 @@ export default function Upadan() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="bg-white md:p-2 p-1 rounded-xl shadow-md w-28 md:min-w-36 lg:w-44 flex flex-col items-center gap-2 hover:scale-105 transition-transform cursor-pointer"
           >
-            <img className="rounded" src={item.image} alt={item.name} />
+            <img
+              className="rounded h-[120px] w-full"
+              src={item.image}
+              alt={item.name}
+            />
             <span className="text-sm font-medium">{item.name}</span>
           </motion.div>
         ))}

@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const ProductBenefit = () => {
   const content = {
     title: "পাইলস কেয়ার এর উপকারিতা",
     image:
-      "https://res.cloudinary.com/dqdircc96/image/upload/v1747059755/cwpp7ufqldm9dg7c9pol.png",
+      "https://i.postimg.cc/hjRTLFHC/469591104-122120292050585658-8154222083326413334-n.jpg",
     points: [
       "আপনার মলদ্বারের ভেতর থেকে ক্ষতিকারক টক্সিন বের করে দিবে।",
       "গ্যাস্ট্রিক ও বদহজমে ভূমিকা রাখবে।",
@@ -40,9 +42,12 @@ const ProductBenefit = () => {
         </ul>
 
         <div className="flex justify-start">
-          <button className="px-6 py-3  bg-[#00bffe] text-white rounded-xl shadow-md hover:bg-[#299ad6] hover:shadow-lg transition-all duration-300 ">
+          <Link
+            to="/faq"
+            className="px-6 py-3  bg-[#00bffe] text-white rounded-xl shadow-md hover:bg-[#299ad6] hover:shadow-lg transition-all duration-300 "
+          >
             আরো জানুন
-          </button>
+          </Link>
         </div>
       </div>
 

@@ -13,13 +13,17 @@ import "swiper/css/pagination";
 import { useGetAllReviewsQuery } from "@/redux/features/review/review.api";
 import { useState } from "react";
 import { Autoplay, Pagination } from "swiper/modules";
+import Loader from "../shared/Loading";
 
 const Testimonial = () => {
   const [more, setMore] = useState(false);
-  const { data } = useGetAllReviewsQuery(undefined);
+  const { data, isLoading } = useGetAllReviewsQuery(undefined);
 
   const testimonials = data?.data;
 
+  if (isLoading) {
+    return <Loader></Loader>;
+  }
   return (
     <section className="w-full mx-auto lg:mt-[80px] md:[60px] mt-[40px]   ">
       <div className="space-y-6 animate-fadeInUp">

@@ -1,6 +1,6 @@
 const Loader = () => {
   return (
-    <div className="h-screen w-screen  flex items-center justify-center">
+    <div className="h-screen   flex items-center justify-center">
       <div className="relative w-[44.8px] h-[44.8px] text-primary">
         <div
           className="absolute inset-0 rounded-full"

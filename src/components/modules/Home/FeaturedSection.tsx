@@ -30,11 +30,11 @@ export default function FeaturesSection() {
             transition={{ duration: 0.6, delay: idx * 0.2 }}
             className="space-y-4 p-6 rounded-2xl shadow hover:shadow-lg transition cursor-pointer"
           >
-            <img
+            {/* <img
               src={feat.img}
               alt={feat.title}
               className="w-28 h-20 mx-auto"
-            />
+            /> */}
             <h3 className="font-bold text-lg">{feat.title}</h3>
             <p className="text-gray-600 text-sm">{feat.desc}</p>
           </motion.div>
